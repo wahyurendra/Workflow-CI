@@ -1,4 +1,4 @@
-name: wine-quality-mlflow
+name: students-dropout-mlflow
 channels:
   - conda-forge
 dependencies:

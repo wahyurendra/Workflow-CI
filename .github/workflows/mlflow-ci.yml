@@ -25,7 +25,7 @@ jobs:
 
       - name: Run MLflow Project
         working-directory: MLProject
-        run: mlflow run . --env-manager=local -P data_path=winequality_preprocessing/winequality_preprocessed.csv
+        run: mlflow run . --env-manager=local -P data_path=students_dropout_preprocessing/students_dropout_preprocessed.csv
 
       - name: Upload MLflow artifacts
         uses: actions/upload-artifact@v4

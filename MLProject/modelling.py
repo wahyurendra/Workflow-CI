@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_sc
 from sklearn.model_selection import train_test_split
 
 
-TARGET_COLUMN = "quality_label"
+TARGET_COLUMN = "dropout_label"
 RANDOM_STATE = 42
 
 
@@ -22,7 +22,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="MLProject training untuk GitHub Actions.")
     parser.add_argument(
         "--data-path",
-        default="winequality_preprocessing/winequality_preprocessed.csv",
+        default="students_dropout_preprocessing/students_dropout_preprocessed.csv",
         help="Path dataset hasil preprocessing relatif terhadap folder MLProject.",
     )
     parser.add_argument("--n-estimators", type=int, default=150)
