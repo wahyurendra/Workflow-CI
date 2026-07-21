@@ -1,0 +1,11 @@
+name: wine-quality-ci
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      data_path: {type: str, default: "winequality_preprocessing/winequality_preprocessed.csv"}
+      n_estimators: {type: int, default: 150}
+      max_depth: {type: str, default: "8"}
+    command: "python modelling.py --data-path {data_path} --n-estimators {n_estimators} --max-depth {max_depth}"
